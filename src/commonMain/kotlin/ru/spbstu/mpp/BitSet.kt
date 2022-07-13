@@ -259,7 +259,7 @@ class BitSet : Iterable<Int>, WordArray {
     }
 
 
-    override fun iterator(): Iterator<Int> {
+    override fun iterator(): MutableIterator<Int> {
         return object : MutableIterator<Int> {
             override fun hasNext(): Boolean {
                 return i >= 0
